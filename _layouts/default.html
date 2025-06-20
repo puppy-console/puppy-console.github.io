@@ -6,6 +6,10 @@
 {{ 'assets/css/' | append: page.style_variant | append: '.css' | relative_url }}
 {% endcapture %}
 
+{% capture meta_icon %}
+{{ 'assets/images/puppy-console-logo.png' | relative_url }}
+{% endcapture %}
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +18,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% if page.style %} <link rel="stylesheet" href="{{style}}"> {% endif %}
         {% if page.style_variant %} <link rel="stylesheet" href="{{style_variant}}">> {% endif %}
+        {% if page.description %} <meta name="description" content="{{page.description}}"> {% endif %}
+        <meta property="og:title" content="{{page.title}}">
+        <meta property="og:description" content="{{page.description}}">
+        <meta property="og:image" content="{{meta_icon}}">
+        <meta property="og:url" content="{{page.url}}">
+        <meta property="og:type" content="website">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-tomorrow.min.css">
         <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
