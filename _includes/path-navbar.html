@@ -1,0 +1,13 @@
+{% assign path_parts = page.url | replace: ".html", "" | replace: ".md", "" | split: "/" | reject: "" %}
+{% assign breadcrumb = "" %}
+
+<nav class="path-navbar">
+    <ul class="path-navbar__container">
+        <li><a href="{{ '/' | absloute_url }}"><i class="fa-solid fa-home"></i></a></li>
+        {% for part in path_parts | offset: 1 %}
+            {% assign breadcrumb = breadcrumb | append: "/" | append: part %}
+            <i class="fa-solid fa-caret-right"></i>
+            <li><a href="{{ breadcrumb | absloute_url }}">{{ part }}</a></li>
+        {% endfor %}
+    </ul>
+</nav>
