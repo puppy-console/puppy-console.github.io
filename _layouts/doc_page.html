@@ -9,7 +9,11 @@ layout: navigation_page
     {% include path-navbar.html %}
     <hr>
     <div class="center-container__content">{{ content }}</div>
-
+    <a href="{{site.website-github}}/blob/main/{{page.path}}" id="doc-edit-btn">
+        <i class="fa-solid fa-paw"></i> - edit this page
+    </a>
+    <hr>
+    
     <div class="doc-footer">
         <div class="doc-footer__nav">
             <a class="text--left" href="#">&lt;- previous</a>
@@ -17,4 +21,5 @@ layout: navigation_page
             <a class="text--right" href="#">next -&gt;</a>
         </div>
     </div>
+    
 </div>
