@@ -3,6 +3,7 @@ title: Home
 layout: navigation_page
 style: default
 style_variant: home
+description: "the better way to do runtime debugging in godot"
 ---
 
 # **>** puppy**-**console **_** 
