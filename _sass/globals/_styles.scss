@@ -24,7 +24,7 @@ main {
 
 a {
     text-decoration-style: wavy;
-    text-decoration-color: map-get($colors, neutral-a20);
+    text-decoration-color: map-get($colors, primary-a10);
     color: map-get($colors, neutral-a0);
     transition: color 0.3s ease;
     &:hover { color: map-get($colors, primary-a0); }
