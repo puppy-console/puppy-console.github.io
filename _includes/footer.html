@@ -1,0 +1,15 @@
+<div class="site-footer">
+  {% if site.data.footer_links %}
+  <div class="site-footer__links">
+    <span class="site-footer__heading-name">Links</span>
+    <ul>
+      {% for link in site.data.footer_links %} 
+      <li>{% include link.html data=link %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  <span class="site-footer__legal">
+    {% include legal_notice.html %}
+  </span>
+</div>

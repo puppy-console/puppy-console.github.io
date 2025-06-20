@@ -1,0 +1,51 @@
+@use "globals/colors";
+
+.site-footer {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    color: map-get($colors, neutral-a20);
+    background-color: map-get($colors, primary-a40);
+}
+
+.site-footer__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-footer__heading-name {
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: map-get($colors, neutral-a0);
+    text-decoration: underline;
+    text-align: center;
+}
+
+.site-footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: map-get($colors, neutral-a20);
+    font-size: 0.6rem;
+
+    &:hover {
+        color: map-get($colors, primary-a0);
+    }
+}
+
+.site-footer__legal {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.5rem;
+    margin: 0.5rem;
+}

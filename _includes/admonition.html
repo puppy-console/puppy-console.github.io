@@ -1,0 +1,33 @@
+{% case include.preset %}
+    {% when "info" %}
+        {% assign class="admonition-info" %}
+        {% assign icon="fa-solid fa-circle-info" %}
+        {% assign title="Info" %}
+    {% when "warn", "warning" %}
+        {% assign class="admonition-warning" %}
+        {% assign icon="fa-solid fa-warning" %}
+        {% assign title="Warning" %}
+    {% when "danger" %}
+        {% assign class="admonition-danger" %}
+        {% assign icon="fa-solid fa-x" %}
+        {% assign title="Danger" %}
+    {% when "success" %} 
+        {% assign class="admonition-success" %}
+        {% assign icon="fa-solid fa-check" %}
+        {% assign title="Success" %}
+    {% else %}
+        {% assign icon="fa-solid fa-pencil" %}
+        {% assign title="Note" %}
+{% endcase %}
+
+
+
+<div class="admonition {{ class }}">
+    <div class="admonition__heading">
+        {% if icon %} <i class="{{ icon }}"></i> {% endif %}
+        <span>{{ title }}:</span>
+    </div>
+    <div class="admonition__content">
+        {{ include.content }}
+    </div>
+</div>

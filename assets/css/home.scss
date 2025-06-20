@@ -1,0 +1,18 @@
+---
+---
+
+@import "globals/colors";
+
+p, h1, h2, h3, h4, h5, h6 { 
+    text-align: center; 
+    color: white;
+}
+
+.admonition {
+    width: 50%;
+    margin: 1em auto;
+}
+
+#hero-paw {
+    color: map-get($colors, primary-a0);
+}

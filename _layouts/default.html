@@ -1,0 +1,25 @@
+{% capture style %}
+{{ 'assets/css/' | append: page.style | append: '.css' | relative_url }}
+{% endcapture %}
+
+{% capture style_variant %}
+{{ 'assets/css/' | append: page.style_variant | append: '.css' | relative_url }}
+{% endcapture %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% if page.style %} <link rel="stylesheet" href="{{style}}"> {% endif %}
+        {% if page.style_variant %} <link rel="stylesheet" href="{{style_variant}}">> {% endif %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-tomorrow.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+        <title>{{ page.title }} &mdash; {{ site.project-name }}</title>
+    </head>
+    <body>
+        {{ content }}
+    </body>
+</html>

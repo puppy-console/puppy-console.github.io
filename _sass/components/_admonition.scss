@@ -1,0 +1,61 @@
+@use "globals/colors";
+
+.admonition {
+    background-color: map-get($colors, neutral-a30);
+    border-radius: 6px;
+    border-left: 4px solid map-get($colors, neutral-a0);
+    padding: 1rem 1rem;
+    margin: 2rem 0;
+    color: map-get($colors, neutral-a0);
+    line-height: 1.5;
+
+    & i { color: map-get($colors, neutral-a0)}
+}
+
+.admonition__heading {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.admonition__content {
+    font-size: 0.85rem;
+}
+
+
+.admonition-danger .admonition__content, 
+.admonition-info .admonition__content, 
+.admonition-success .admonition__content,
+.admonition-warning .admonition__content {
+    opacity: 0.75;
+}
+
+.admonition-info {
+    background-color: map-get($colors, info-a30);
+    border-color: map-get($colors, info-a0);
+
+    & i { color: map-get($colors, info-a0)}
+}
+
+.admonition-warning {
+    background-color: map-get($colors, warning-a30);
+    border-color: map-get($colors, warning-a0);
+
+    & i { color: map-get($colors, warning-a0)}
+}
+
+.admonition-danger {
+    background-color: map-get($colors, danger-a30);
+    border-color: map-get($colors, danger-a0);
+
+    & i { color: map-get($colors, danger-a0) }
+}
+
+.admonition-success {
+    background-color: map-get($colors, success-a30);
+    border-color: map-get($colors, success-a0);
+
+    & i { color: map-get($colors, success-a0) }
+}
+
+

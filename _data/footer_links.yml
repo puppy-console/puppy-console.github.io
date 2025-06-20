@@ -1,0 +1,7 @@
+
+- name: "Personal Github"
+  url: "https://github.com/nik0-dev/"
+  off_site: true
+- name: "Project Github"
+  url: "https://github.com/nik0-dev/puppy-console"
+  off_site: true

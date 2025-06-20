@@ -1,0 +1,39 @@
+---
+---
+@import "globals/index";
+@import "components/index";
+
+.center-container {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol {
+    margin: 1.5rem 0;
+}
+
+ol {
+    margin-left: 2rem;
+}
+
+.center-container__nav {
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.doc-footer {
+    margin-top: 2rem;
+}
+
+strong { color: map-get($colors, primary-a0); }
+
+hr { 
+    margin: 1em 0; 
+    border: none;
+    border-top: 1px dashed map-get($colors, neutral-a50);
+}
+
+

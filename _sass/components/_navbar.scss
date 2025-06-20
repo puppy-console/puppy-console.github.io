@@ -1,0 +1,18 @@
+@use "globals/colors";
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: map-get($colors, primary-a40);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.navbar__social-github {
+    cursor: pointer;
+}

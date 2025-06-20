@@ -1,0 +1,77 @@
+@use "globals/colors";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+
+body {
+    background-color: map-get($colors, primary-a50);
+    color: map-get($colors, neutral-a0);
+    font-family: "JetBrains Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main { 
+    flex-grow: 1; 
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: map-get($colors, neutral-a0);
+    transition: color 0.3s ease;
+    &:hover { color: map-get($colors, primary-a0); }
+}
+
+.text--left { text-align: left; }
+.text--center { text-align: center; }
+.text--right { text-align: right; }
+
+.vspacer {
+    margin: 2em inherit;
+}
+
+strong { color: map-get($colors, primary-a0); }
+
+hr { 
+    margin: 1.25em 0;
+    border: none;
+    border-top: 1px dashed map-get($colors, neutral-a50);
+}
+
+pre:has(code) {
+    background-color: map-get($colors, primary-a40);
+    border-radius: 6px;
+    padding: 1.1rem;
+    margin: 2rem 0;
+}
+
+summary {
+    list-style: none;
+    border-radius: 6px;
+    padding: 1.2rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: map-get($colors, primary-a40);
+    }
+
+    &::before { 
+        content: "\f0da"; 
+        margin-right: 0.25em;
+    
+    }
+}
+
+details:open summary {
+    &::before { 
+        content: "\f0d7"; 
+    }
+}
