@@ -60,13 +60,12 @@ summary {
     cursor: pointer;
 
     &:hover {
-        background-color: map-get($colors, primary-a40);
+        background-color: map-get($colors, primary-a30);
     }
 
     &::before { 
         content: "\f0da"; 
         margin-right: 0.25em;
-    
     }
 }
 
@@ -74,4 +73,6 @@ details:open summary {
     &::before { 
         content: "\f0d7"; 
     }
+
+    background-color: map-get($colors, primary-a30);
 }
