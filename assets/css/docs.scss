@@ -42,6 +42,4 @@ hr {
     font-size: 0.75rem;
     color: map-get($colors, accent-a0);
     text-decoration-color: map-get($colors, accent-a30);
-
-    &::after { content: " "; }
 }
