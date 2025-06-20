@@ -2,7 +2,7 @@
   {% if site.data.footer_links %}
   <div class="site-footer__links">
     <span class="site-footer__heading-name">Links</span>
-    <ul>
+    <ul class="site-footer__links-container">
       {% for link in site.data.footer_links %} 
       <li>{% include link.html data=link %}</li>
       {% endfor %}
