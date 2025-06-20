@@ -11,3 +11,7 @@
     list-style: none;
     gap: 20px;
 }
+
+.path-navbar__container i {
+    color: map-get($colors, primary-a0);
+}
