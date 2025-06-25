@@ -7,8 +7,8 @@ highlighter: none
 ###############
 ### GENERAL ###
 ###############
-domain: puppy-console.github.io
-url: https://puppy-console.github.io
+domain: puppy-tools.github.io
+url: https://puppy-tools.github.io
 author: nik0-dev 
 project-name: puppy-console
 
@@ -16,5 +16,5 @@ project-name: puppy-console
 ### GITHUB INFO ###
 ###################
 personal-github: https://github.com/nik0-dev
-project-github: https://github.com/puppy-console/puppy-console
-website-github: https://github.com/puppy-console/puppy-console.github.io
+project-github: https://github.com/puppy-tools/puppy-console
+website-github: https://github.com/puppy-tools/puppy-tools.github.io
